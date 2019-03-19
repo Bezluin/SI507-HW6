@@ -86,8 +86,9 @@ To create a code comment, add "//" before the text of the comment.
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**  
 console.log() and alert() are both similar in function to the Python print function. console.log() prints text to the console, which can only be vewed by using the inspect function from the browser. This would be useful if the designer does not intend for the text to be shown to the viewer of the webpage. The alert() function is useful when intending to show a message to the viewer.
 
-* **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
-We would have to comment out ***alert("hello");***
+* **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**  
+We would have to comment out ***alert("hello");***  
+
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
 
 * **What does the word `document` represent in this code? Explain briefly.**
