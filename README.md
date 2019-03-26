@@ -77,6 +77,7 @@ To create a code comment, add "//" before the text of the comment.
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**  
 
+There has to be an event which invokes the Javascript progra. For example `<body onload = "displayInformation();">` sets the Javascript displayInformation() function to run when the body of the page is being loaded.
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**  
 
@@ -108,7 +109,10 @@ White.
 
 The boxes have a gray color because both boxes are paragraph elements, and the styling used in the HTML file causes paragraph elements to have gray backgrounds. You could make the boxes display a different color by directly editing the `"background-color"` attribute for `p` within the `<style>` and `</style>` tags.
 
-* **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
+* **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**  
+
+I created a second function that works similarly to `copyFunction`, but instead of displaying "Go Blue!", it displays "O Canada". Then I added an oncopy event to the McGill university list item which would invoke the function.  
+I figured out how to do this because the principles for this to work were the same as the ones for displaying "Go Blue!" when University of Michigan was copied.
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
@@ -121,7 +125,9 @@ function handleClick(){
 
 ```js
 <button onclick=handleClick() id="wow-button">Wow</button>
-```
+```  
+
+The first piece of Javascript code creates a function that when invoked, causes the browser to display a pop-up box with the text "hello". The second piece of Javascript code causes the function to be invoked whenever the button is clicked on.
 
 
 
