@@ -86,16 +86,19 @@ We would have to comment out ***alert("hello");***.
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**  
 In the function displayInformation(), change the line of code ***document.querySelector('h1').innerHTML = "A name";*** to ***document.querySelector('h1').innerHTML = "(Your own name)";***
 
-* **What does the word `document` represent in this code? Explain briefly.**
-
+* **What does the word `document` represent in this code? Explain briefly.**  
+`document` represents the entire HTML code for the webpage. Typing method names following `document.` is a way of invoking these methods on the document object or child elements within the document object.
 
 * **What is happening in line 12 ( 
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
-)? Explain, briefly (<= 2 sentences).**
+)? Explain, briefly (<= 2 sentences).**  
+This line of code sets the value of the element with an id of "items" to the number of elements with the "li" tag name, which is an integer.
 
-* **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
+* **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**  
+White.
 
-* **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
+* **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**  
+The boxes have a gray color because both boxes are paragraph elements, and the styling used in the HTML file causes paragraph elements to have gray backgrounds. You could make the boxes display a different color by directly editing the `"background-color"` attribute for `p` within the `<style>` and `</style>` tags.
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
 
