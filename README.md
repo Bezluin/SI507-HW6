@@ -71,7 +71,8 @@ This is what an example answer should look like. If you want to include some cod
 Some JavaScript code
 ```
 
-* **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**  
+* **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**    
+
 To create a code comment, add "//" before the text of the comment.
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**  
