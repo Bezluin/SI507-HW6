@@ -139,13 +139,21 @@ The first piece of Javascript code creates a function that when invoked, causes 
 
 * **Check out the file `jquerylib_submit_example.html`. This is an example of code that uses a package called `jQuery` (and this will need you to have an internet connection to run it properly, although the other file does not). Check out resources above for more on jQuery!**
 
-* **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
+* **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**  
 
-* **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
+In the if/else statment within the javascript function, the two results are assigned the classes of "error" and "good". In the <style> tags, elements with the class "error are styled to be red, while class "good" is blue.
 
-* **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
+* **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**  
 
-* **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
+That line is a regular expression that searches through a string an matches any character that is not a letter. I Googled the entire syntax first, then looked through the basic definitions and syntax of regular expressions.
+
+* **What's different about the syntax of conditional statements in JavaScript, compared to Python?**  
+
+First, the conditional statements must be enclosed in {} brackets after an if statement. Second, the "elif" statement in Python is written as "else if" in JavaScript.
+
+* **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**  
+
+It refers to the time it takes from the start of the action to end. The unit used is miliseconds.
 
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
 
@@ -153,7 +161,9 @@ The first piece of Javascript code creates a function that when invoked, causes 
 $(document).ready(function(){
     $("form").submit(function(event){
 ```
-
+  
+  
+Of these two lines of code, the first ensures that the Javascript code enclosed within it will only run once the document has finished loading in the browser. The second line dictates that the following function will be invoked when the form is submitted.  
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.
